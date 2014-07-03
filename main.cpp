@@ -17,18 +17,18 @@ int main()
 
     queue <Mat> frames;
     Mat frame;
-    int i = 0;//27=ESC, 101=e
-    int limit = 30;
+    int i = 0;                             //27=ESC, 101=e
+    int limit = 30;                        //Number of frames queue will hold at once
     int save = 0;
 
-    while (i!=27)
+    while (i!=27)                          //Default procedure
     {
 
         if (!input_cap.read(frame))
         {
             break;
         }
-        if(frames.size()>=limit)
+        if(frames.size()>=limit)          //Refresh queue if trying to add more frames than limit
         {
             frames.pop();
             frames.push(frame.clone());
