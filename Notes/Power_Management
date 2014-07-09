@@ -6,4 +6,8 @@ Power Management Notes
                         - just use a sequential timer in order to turn the system on/off after a certain number of hours 
                         - supply the RTC on the mBed with an external 3V battery that will last ~2 years
 - single NPN gate can turn system on and off with the use of digital I/O pins on mBed
+
+7/9/14
+- during the process of putting the entire enclosure together, we can put the mBed in, power it up, and then upload the program which involves manually entering the date and time
+
     
