@@ -1,0 +1,56 @@
+July 10 Zoo Notes - 
+
+We spoke to Paquita and a few the zoo keepers (Bruce Rideout, Joop Kuhn, Brett Baldwin) 
+regarding the logistics of the project and the site of installations. 
+
+Things To Consider:
+
+    1. One of the most important decisions Paquita brought up was that she now wants
+       modules set up at 3 different sites: the gharials, the condors, and the 
+       rattlesnakes. We will need to order more parts!
+       
+    2. We are welcome to run tests on the systems before opening hours but we will need
+       an escort. Paquita can get us student ID cards so that we can get into the zoo 
+       during visiting hours and look at the sites without an escort. 
+       
+    3. Some of the exhibit window panes consists of 3 separate panels sandwiched 
+       together. This may potentially affect the detection of the vibration or alter 
+       the acoustics of the glass requiring us to use stronger sensors or a higher 
+       signal threshold to detect the vibration. We will also need at least one sensor 
+       on each pane of glass.
+       
+    4. We need to place the sensors in such a way that guests cannot touch them and 
+       that they will not not block the line of sight of the animal
+    
+    5. Paquita would like to have the video buffer extended to include footage from 2 
+       seconds before the collision and 20 - 30 seconds after the collision so that if 
+       the bird rebounds off the glass and falls on the ground they can see whether the 
+       bird is able to recover and fly away (or is dead).
+
+    6. The zoo keeper brought up an important event that may affect the system’s programming 
+       each morning. The windows in each exhibit is cleaned each morning before the opening 
+       of the zoo every day. The process takes approximately 30 minutes. Paquita does not 
+       want the system to record footage of the windows being cleaned and she does not know
+       whether the windows will be regularly cleaned at the same time each morning; therefore, 
+       we will need a way to sleep the system. We can  have a button that sleeps the system
+       for 30 minutes then resumes after that time interval. (We can also have a light on the 
+       side of the system to indicate that the system is sleeping.)
+
+    7. The system may also need to weed out low and continuous signals (vs sharp spikes) 
+       in order to remove events that are not bird collisions (such as window cleaning).  
+
+    8. For the condor exhibit, Paquita wants a wide camera view of the window panes. 
+       We can have two cameras (one on each end of the exhibit) pointed towards the center 
+       glass panel and (multiple ?) sensors mounted on each pane. (2 Modules)
+
+    9. For the rattlesnake exhibit, we will have two cameras (one mounted on each pole) pointed
+       towards the exhibit. For the module mounted on the pole on the other side of the visitor’s
+       pathway, we will need to use a wireless (xbee) radio module to send the vibration detected 
+       from the piezo to the main control board (mounted on the pole). (2 Modles)
+
+    10. For gharials site, we will need to mount a single module on the gazebo pointed at the 
+        single glass panel. However, for this site, we may need to mount sensors on both sides 
+        of the pane due to birds colliding with both sides of the glass (1 Module) 
+
+    11. The glass panels in all three locations are made up of three layers of 1/2" glass (1.5" 
+        total thickness). 
